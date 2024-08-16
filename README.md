@@ -1,2 +1,2 @@
 # PhotoVault
-Photography booking website
+Photography booking website For Desktop View only!
