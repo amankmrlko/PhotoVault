@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #070707; 
+}
+body::-webkit-scrollbar-thumb {
+  background: #CFCFEA;
+}
+*{
+  margin:0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* BODY CSS */
+
+#main{
+  background-image: url('pics/photo-1678203699263-917199c725b2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+#heading{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  text-align:center;  
+  
+    
+}
+h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #CFCFEA;
+  margin-top: 100px;
+  text-shadow: 0px 0px 50px #2A2C24;
+}
+h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #CFCFEA;
+  text-shadow: 0px 0px 50px #2A2C24;
+  margin-bottom: 40px;
+}
+h3{
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #CFCFEA;
+  text-shadow: 0 0 5px #CFCFEA;
+}
+
+
+.addimage{
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  overflow: hidden;
+  filter: grayscale(70%);
+}
+.addimage-img{
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  animation: fly 0.7s;
+  
+}
+@keyframes fly{
+    0% {transform: translateY(100%);}
+    50% {transform: translateY(0);}
+    100% {transform: translateY(100%);}
+}
+.container{
+  z-index:50;
+  background-color: #070707;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 100%;
+  box-shadow: 0 0 50px #cfcfea9a;
+  padding: 70px 0px;
+  padding-bottom: 0;
+ 
+}
+
+
+.margin{
+  max-width: 85%;
+  margin: 0 auto;
+}
+.gallery, .gallery1{
+  display: flex;
+  margin: 50px 0;
+}
+.gallery img{
+  width: 22%;
+  object-fit: cover;
+  margin: 0 20px;
+  opacity: 0.6;
+  transition: ease-in-out 0.3s;
+}
+.gallery img:hover{
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 0 50px #CFCFEA;
+  opacity: 1;
+  cursor: pointer;
+  
+}
+.gallery1{
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.gallery1.show {
+  opacity: 1;
+}
+
+.gallery1.hide {
+  opacity: 0;
+}
+.gallery1 img{
+  width: 22%;
+  object-fit: cover;
+  margin: 0 20px;
+  opacity: 0.6;
+  transition: ease-in-out 0.3s;
+}
+.gallery1 img:hover{
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 0 50px #CFCFEA;
+  opacity: 1;
+  cursor: pointer;
+  
+}
+.btn{
+  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  
+}
+
+
+
+#Viewbtn{ 
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background: none;
+  border: none;
+  border: 2px solid #CFCFEA;
+  box-shadow: 0 0 10px #CFCFEA;
+  border-radius: 40px;
+  cursor: pointer;
+  :hover{
+    text-shadow: 0 0 5px #CFCFEA;
+    transition: ease-in-out 0.2s;
+  }
+}
+
+
+#Viewbtn p{
+  color: #CFCFEA;
+  font-size: 20px;
+}
+form{
+  margin: 50px;
+  text-align: left;
+}
+.hire-form{
+  background-image: url('pics/hire.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#CFCFEA;
+  font-size:25px;
+  background-color: #070707;
+  border-radius: 50px;
+  margin: 100px 0;
+  padding: 50px;
+  box-shadow: 0 0 15px #CFCFEA;
+  animation: pulse 2.5s linear 1s infinite;
+  width: 90%;
+  margin: 100px auto;
+  padding-bottom: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 150px;
+
+}
+@keyframes pulse {
+  0% { box-shadow:0 0 15px #CFCFEA; }
+  50% { box-shadow:0 0 40px #CFCFEA; }
+  100% { box-shadow:0 0 15px #CFCFEA; }
+  
+}
+select, input[type="text"],input[type="email"]{
+  background: none;
+  outline: none;
+  border: none;
+  border: 1px solid #CFCFEA;
+  box-shadow: 0 0 5px #CFCFEA;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 20px;
+  color: #CFCFEA;
+  width: 300px;
+  margin: 30px 0;
+}
+
+option{
+  background-color: #070707;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+#submit p{
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px;
+  margin:0;
+  padding:0;
+}
+#submit{
+  background: none;
+  margin: 20px;
+  padding: 3px 45px;
+  outline: none;
+  border: 1px solid #CFCFEA;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #CFCFEA;
+  :hover{
+    text-shadow: 0 0 8px #CFCFEA;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+  margin-bottom: 50px;
+}

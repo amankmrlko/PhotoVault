@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Vault</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="textstyle.css" />
+  </head>
+  <body>
+    <div class="nav-links">
+      <ul class="nav">
+        <li>
+          <a href="#about"><p>About</p></a>
+        </li>
+        <li>
+          <a href="#Services"><p>Services</p></a>
+        </li>
+        <li>
+          <a href="#package"><p>Packages</p></a>
+        </li>
+        <li>
+          <a href="#contact"><p>Contact</p></a>
+        </li>
+        <li id="contact-btn">
+          <a href="#hire"><p>Hire Us!</p></a>
+        </li>
+      </ul>
+    </div>
+    <div id="main">
+      <div id="heading">
+        <h1>The Photo Vault</h1>
+        <h2>Unlocking timeless moments, one frame at a time.</h2>
+        <a href="#gal" id="galbtn"><span class="galp">Gallery</span></a>
+      </div>
+    </div>
+    <br />
+    <div id="gal" class="container">
+      <div class="margin">
+        <h3>Gallery</h3>
+        <div id="mainGal">
+          <div class="gallery">
+            <img
+              class="images"
+              src="/photo pop animation/pics/4f305dc5d3f1bbb336d35a71f1b953a2.jpg"
+            />
+            <img
+              class="images"
+              src="/photo pop animation/pics/desktop-wallpaper-nature-portrait-portrait-natural-thumbnail.jpg"
+            />
+            <img
+              class="images"
+              src="/photo pop animation/pics/nature-photography-portrait-display-wallpaper-preview.jpg"
+            />
+            <img
+              class="images"
+              src="/photo pop animation/pics/picture-of-boy-running-in-the-driveway-by-Cassandra-Casley.jpg"
+            />
+          </div>
+        </div>
+        <div class="btn">
+          <button id="Viewbtn"><p id="pbtn">View More</p></button>
+        </div>
+        <div class="textCenter">
+          <h3 id="about">Our Philosophy</h3>
+
+          <p>
+            At The Photo Vault, we view photography as more than just taking
+            pictures, it's about capturing the essence of each moment. Our
+            philosophy revolves around creativity, authenticity, and attention
+            to detail. We strive to create images that are not only visually
+            striking but also deeply personal and meaningful.
+          </p>
+        </div>
+      </div>
+      <div class="textCenter back-img">
+        <div class="margin">
+          <h3 id="Services">Our Services</h3>
+          <div class="flexed">
+            <img src="/photo pop animation/pics/photocam.jpg" />
+            <p>
+              Capture your unique style with a personalized photoshoot tailored
+              to your needs. Whether for headshots, milestones, or creative
+              projects, we'll guide you through a customized session in your
+              preferred setting. Afterward, you'll receive beautifully edited,
+              high-resolution images. With flexible packages to suit any budget,
+              we make it easy to bring your vision to life. Book your photoshoot
+              today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="margin">
+        <div class="textCenter">
+          <h3 id="package">Packages</h3>
+          <div class="pack">
+            <div class="item1">
+              <div class="black">
+                <h4>Basic Package</h4>
+                <p>Price: $150</p>
+                <p>Duration: 1 Hour</p>
+                <button id="book"><p>Book now!</p></button>
+              </div>
+            </div>
+
+            <div class="item2">
+              <div class="black">
+                <h4>Standard Package</h4>
+                <p>Price: $300</p>
+                <p>Duration: 2 Hour</p>
+                <button id="book"><p>Book now!</p></button>
+              </div>
+            </div>
+
+            <div class="item3">
+              <div class="black">
+                <h4>Premium Package</h4>
+                <p>Price: $600</p>
+                <p>Duration: 4 Hour</p>
+                <button id="book"><p>Book now!</p></button>
+              </div>
+            </div>
+
+            <div class="item4">
+              <div class="black">
+                <h4>Deluxe Package</h4>
+                <p>Price: $1200</p>
+                <p>Duration: 8 Hours</p>
+                <button id="book"><p>Book now!</p></button>
+              </div>
+            </div>
+          </div>
+          <div class="hire-form">
+            <div class="black-hire">
+              <div id="hide-form">
+                <h3 id="hire">Hire Us & Relax!</h3>
+                <form action="#">
+                  <div class="flex">
+                    <div>
+                      <label for="name">Full Name</label><br />
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                      />
+                      <br />
+                      <label for="email">Your Email</label><br />
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="abc@example.com"
+                        required
+                      />
+                      <br />
+                    </div>
+                    <div>
+                      <label for="phone">Contact Number</label><br />
+                      <input
+                        type="text"
+                        id="phone"
+                        placeholder="Without Country Code"
+                        required
+                      />
+                      <br />
+                      <label for="package">Select your package!</label><br />
+                      <select id="options" required>
+                        <option value="Basic">Basic</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Deluxe">Deluxe</option>
+                      </select>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="textCenter">
+                    <button id="submit"><p>Get a call</p></button>
+                  </div>
+                </form>
+              </div>
+              <div id="thank-you">
+                <h3>Thank you for showing your intrest!</h3>
+                <h3>We'll connect with you soon.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="footer textCenter">
+        <div class="black-footer">
+          <div class="margin">
+            <h3 style="padding-top: 30px; margin-bottom: -30px">
+              Connect with us!
+            </h3>
+            <div class="flex foot-img textCenter">
+              <a href="#"><img src="pics/social-combied.png" /></a>
+              <!-- <a href="#"><img src="pics/insta.png" /></a>
+              <a href="#"><img src="pics/yt.png" /></a>
+              <a href="#"><img src="pics/whatsapp.png" /></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
